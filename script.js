@@ -1,10 +1,11 @@
-class GameClass {
-    constructor() {
-        GL.clearColor(0.0, 0.0, 0.0, 1.0);
-        GL.clear(GL.COLOR_BUFFER_BIT);
+class Game extends Program {
+    Start() {
+        console.log("Start");
+    }
 
-        const MyCube = new Cube();
+    Frame() {
+        console.log("Frame");
     }
 }
 
-const Game = new GameClass();
+StartGame(Game);
